@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "8rYLHQHcOUzfJNiqcXS2nm+4GXb45bgGB/jjNvOijf8=",
+  "Source": "boat-app-back",
+  "BasePath": "_content/boat-app-back",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

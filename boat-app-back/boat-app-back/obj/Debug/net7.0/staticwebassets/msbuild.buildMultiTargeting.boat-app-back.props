@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\boat-app-back.props" />
+</Project>
