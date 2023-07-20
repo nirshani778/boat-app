@@ -1,0 +1,154 @@
+.add-boat-container {
+  display: flex;
+  justify-content: center;
+  margin: 20px;
+
+  .add-boat-card-container {
+    display: flex;
+    flex-direction: column;
+    max-width: 1160px;
+    background-color: #95dada;
+    border: 1px solid grey;
+    border-radius: 10px;
+    padding: 25px;
+    cursor: pointer;
+    -moz-osx-font-smoothing: grayscale;
+    backface-visibility: hidden;
+    transform: translateZ(0);
+    transition: transform 0.25s ease-out;
+    width: 85vw;
+
+    .btn-container {
+      display: flex;
+      justify-content: center;
+
+      .save-button {
+        margin-top: 12px;
+        width: 150px;
+        height: 35px;
+        letter-spacing: 0.5px;
+        line-height: 50px;
+        padding: 0 20px 0 20px;
+        font-size: 13px;
+        background-color: black;
+        color: white;
+        text-transform: uppercase;
+        font-family: 'Open Sans';
+        font-weight: bolder;
+        border: none;
+        cursor: pointer;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        &:hover {
+          background-color: white;
+          color: black;
+          border: 1px solid black;
+        }
+      }
+    }
+
+    .add-boat-card {
+      display: flex;
+      flex-direction: row;
+
+      .add-boat-splitter {
+        margin: 0 30px;
+        color: black;
+      }
+
+      .boat-data-container {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin-top: 12px;
+        .boat-data-unit {
+          display: flex;
+          flex-direction: column;
+          justify-content: flex-start;
+          width: 100%;
+          margin-bottom: 12px;
+
+          h4 {
+            margin: 0 0 5px 5px;
+            padding: 0;
+            width: fit-content;
+          }
+        }
+      }
+      .boat-data-img {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        width: 360px;
+      }
+
+      input {
+        padding: 10px;
+        font-size: 16px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        outline: none;
+        transition: border-color 0.2s ease-in-out;
+        width: 100%;
+      }
+
+      /* Input field focus styles */
+      input:focus {
+        border-color: #007bff;
+        box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+      }
+
+      textarea {
+        padding: 10px;
+        font-size: 16px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        resize: vertical; /* Allow vertical resizing */
+        outline: none;
+        transition: border-color 0.2s ease-in-out;
+        width: 100%;
+      }
+
+      /* Textarea focus styles */
+      textarea:focus {
+        border-color: #007bff;
+        box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+      }
+    }
+  }
+}
+
+@media (max-width: 960px) {
+  .add-boat-container {
+    .add-boat-card-container {
+      .add-boat-card {
+        .boat-data-img {
+          width: 260px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 640px) {
+  .add-boat-container {
+    .add-boat-card-container {
+      .add-boat-card {
+        flex-direction: column;
+
+        .boat-data-img {
+          max-width: none;
+          width: 100%;
+          margin-bottom: 30px;
+          h4 {
+            margin: 0 0 5px 5px;
+            padding: 0;
+            width: fit-content;
+          }
+        }
+      }
+    }
+  }
+}

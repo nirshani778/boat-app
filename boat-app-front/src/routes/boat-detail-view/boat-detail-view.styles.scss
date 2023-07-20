@@ -1,0 +1,130 @@
+.boat-view-container {
+  display: flex;
+  flex-direction: column;
+  max-width: 1160px;
+  border-radius: 10px;
+  padding: 25px;
+  cursor: pointer;
+  -moz-osx-font-smoothing: grayscale;
+  backface-visibility: hidden;
+  transform: translateZ(0);
+  transition: transform 0.25s ease-out;
+
+  img {
+    width: 100%;
+    height: 100%;
+    max-width: 500px;
+    object-fit: contain;
+  }
+  .boat-card-img {
+    display: flex;
+    justify-content: center;
+    min-width: 230px;
+    margin-bottom: 30px;
+  }
+  .splitter {
+    margin: 0 30px;
+  }
+
+  .boat-card-content {
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+  }
+  h4 {
+    margin-bottom: 5px;
+  }
+
+  input {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+    transition: border-color 0.2s ease-in-out;
+    width: 100%;
+  }
+
+  /* Input field focus styles */
+  input:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+  }
+
+  textarea {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    resize: vertical; /* Allow vertical resizing */
+    outline: none;
+    transition: border-color 0.2s ease-in-out;
+    width: 100%;
+  }
+
+  /* Textarea focus styles */
+  textarea:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+  }
+
+  .btn-container {
+    display: flex;
+    justify-content: space-between;
+
+    .update-btn {
+      margin-top: 12px;
+      min-width: 50px;
+      width: auto;
+      height: 35px;
+      letter-spacing: 0.5px;
+      line-height: 50px;
+      padding: 0 20px 0 20px;
+      font-size: 13px;
+      background-color: black;
+      color: white;
+      text-transform: uppercase;
+      font-family: 'Open Sans';
+      font-weight: bolder;
+      border: none;
+      cursor: pointer;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      &:hover {
+        background-color: white;
+        color: black;
+        border: 1px solid black;
+      }
+    }
+  }
+}
+
+.boat-card-container:hover {
+  transform: scale(1.01);
+}
+
+@media (max-width: 960px) {
+  .boat-card-container {
+    img {
+      max-width: 180px;
+    }
+    .boat-card-img {
+      min-width: 180px;
+    }
+  }
+}
+
+@media (max-width: 640px) {
+  .boat-card-container {
+    flex-direction: column;
+    img {
+      max-width: none;
+    }
+    .boat-card-img {
+      max-width: none;
+      margin-bottom: 30px;
+    }
+  }
+}
